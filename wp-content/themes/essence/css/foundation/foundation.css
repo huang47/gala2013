@@ -1587,3 +1587,57 @@ ul.orbit-bullets li.active.has-thumb {
     float: right;
     padding-bottom: 0.7em;  
 }
+
+/*
+ * nexus 7..etc
+ */
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 767px) {
+    .sidebar-right {
+        display: none;
+    }
+    .navigation .menu {
+        font-size: 0.6em!important;
+    }
+    .entry-content, .branch {
+        max-width: 540px!important;
+        width: 540px!important;
+    }
+    #timer {
+        font-size: 1.5em!important;
+    }
+    #timer div {
+        width: 100px!important;
+        margin-top: -20px;
+    }
+    #timer .day:after { content: 'day'!important; }
+    #timer .hour:after { content: 'hour'!important; }
+    #timer .minute:after { content: 'min'!important; }
+    #timer .second:after { content: 'sec'!important; }
+}
+
+/*
+ * ipad
+ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .sidebar-right {
+        display: none;
+    }
+    .navigation .menu {
+        font-size: 0.8em!important;
+    }
+    #timer {
+        font-size: 1.5em!important;
+    }
+    #timer div {
+        width: 100px!important;
+        margin-top: -20px;
+    }
+    #timer .day:after { content: 'day'!important; }
+    #timer .hour:after { content: 'hour'!important; }
+    #timer .minute:after { content: 'min'!important; }
+    #timer .second:after { content: 'sec'!important; }
+}
