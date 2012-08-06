@@ -407,6 +407,7 @@ img.wp-smiley, img.wp-wink {
  * Menus
  */
 .navigation .menu {
+    font-size: 1em;
     letter-spacing: 0.1em;
 	border-bottom:1px solid #999;
 	clear:both;

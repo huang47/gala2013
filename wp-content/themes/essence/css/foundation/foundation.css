@@ -1588,12 +1588,37 @@ ul.orbit-bullets li.active.has-thumb {
     padding-bottom: 0.7em;  
 }
 
-/*
- * nexus 7..etc
- */
 @media only screen 
-and (min-device-width : 600px) 
-and (max-device-width : 767px) {
+and (min-width : 320px)
+and (max-width : 600px) {
+    .sidebar-right {
+        display: none;
+    }
+    .navigation .menu {
+        font-size: 0.3em!important;
+    }
+    .navigation .menu li a:first-letter {
+        font-size: 1.6em;
+    }
+    .entry-content, .branch {
+        max-width: 100%!important;
+    }
+    #timer {
+        font-size: 1em!important;
+    }
+    #timer div {
+        width: 50px!important;
+        margin-top: -20px;
+    }
+    #timer .day:after { content: 'd'!important; }
+    #timer .hour:after { content: 'h'!important; }
+    #timer .minute:after { content: 'm'!important; }
+    #timer .second:after { content: 's'!important; }
+}
+
+@media only screen 
+and (min-width : 601px) 
+and (max-width : 719px) {
     .sidebar-right {
         display: none;
     }
@@ -1601,11 +1626,10 @@ and (max-device-width : 767px) {
         font-size: 0.6em!important;
     }
     .entry-content, .branch {
-        max-width: 540px!important;
-        width: 540px!important;
+        width: 100%!important;
     }
     #timer {
-        font-size: 1.5em!important;
+        font-size: 1.2em!important;
     }
     #timer div {
         width: 100px!important;
@@ -1621,23 +1645,23 @@ and (max-device-width : 767px) {
  * ipad
  */
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+and (min-width : 720px) 
+and (max-width : 1024px) {
     .sidebar-right {
         display: none;
     }
+    .row .eight { width: 100%; }
     .navigation .menu {
         font-size: 0.8em!important;
+    }
+    .entry-content, .branch {
+        width: 100%!important;
     }
     #timer {
         font-size: 1.5em!important;
     }
     #timer div {
-        width: 100px!important;
+        width: 120px!important;
         margin-top: -20px;
     }
-    #timer .day:after { content: 'day'!important; }
-    #timer .hour:after { content: 'hour'!important; }
-    #timer .minute:after { content: 'min'!important; }
-    #timer .second:after { content: 'sec'!important; }
 }
