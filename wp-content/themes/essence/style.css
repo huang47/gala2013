@@ -987,6 +987,10 @@ ul.style {
     margin-bottom: 0.5em;
 }
 
+.entry-content .meta li {
+    line-height: 1.2em;
+}
+
 .entry-content .dollar {
     font-style: italic;
     font-size: 1.2em;
