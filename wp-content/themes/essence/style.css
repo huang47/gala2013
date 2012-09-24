@@ -1091,6 +1091,7 @@ ul.style {
     display: inline;
     position: absolute;
     left: 8em;
+    font-size: 0.9em;
 }
 
 .travel-schedule li .time {
